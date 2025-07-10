@@ -6,6 +6,7 @@ import Project from './pages/Project'
 import  './index.css'
 import Contact from './pages/Contact'
 import Resume from './pages/Resume'
+import Footer from './components/Footer'
 
 
 
@@ -21,6 +22,7 @@ const App = () => {
         <section id="contact"><Contact/></section>
         <section id="resume"><Resume/></section>
     </main>
+    <Footer/>
     </>
   )
 }
