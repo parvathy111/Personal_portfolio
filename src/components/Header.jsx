@@ -6,7 +6,7 @@ const Header = () => {
         <nav className="space-x-6">
           <a href="#home" className="hover:text-blue-500">Home</a>
           <a href="#about" className="hover:text-blue-500">About</a>
-          <a href="#projects" className="hover:text-blue-500">Projects</a>
+          <a href="#project" className="hover:text-blue-500">Projects</a>
           <a href="#contact" className="hover:text-blue-500">Contact</a>
           <a href="#resume" className="hover:text-blue-500">Resume</a>
         </nav>
