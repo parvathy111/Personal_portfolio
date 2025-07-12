@@ -20,26 +20,26 @@ const Projects = () => {
   ];
 
   return (
-    <div className="relative min-h-screen bg-gradient-to-b from-gray-100 via-white to-gray-200 px-4 py-20 flex flex-col items-center overflow-hidden">
+    <div className="relative min-h-screen bg-gradient-to-b from-black via-gray-900 to-gray-800 px-4 py-20 flex flex-col items-center overflow-hidden">
       
       {/* Floating abstract circles in background */}
       <div className="absolute top-0 left-0 w-full h-full z-0 overflow-hidden pointer-events-none">
-        <div className="absolute w-72 h-72 bg-purple-200 rounded-full blur-3xl opacity-30 top-20 left-10 animate-pulse"></div>
-        <div className="absolute w-72 h-72 bg-blue-200 rounded-full blur-3xl opacity-30 bottom-10 right-10 animate-ping"></div>
+       <div className="absolute w-72 h-72 bg-purple-500 rounded-full opacity-20 top-0 left-[-60px] blur-3xl"></div>
+      <div className="absolute w-72 h-72 bg-blue-500 rounded-full opacity-20 bottom-0 right-[-60px] blur-3xl"></div>
       </div>
 
       {/* Heading */}
-      <h2 className="text-4xl font-bold text-gray-800 mb-12 z-10">Projects</h2>
+      <h2 className="text-4xl font-bold text-white mb-12 z-10">Projects</h2>
 
       {/* Cards */}
       <div className="grid gap-8 max-w-5xl w-full md:grid-cols-2 z-10">
         {projectData.map((project, index) => (
           <div
             key={index}
-            className="bg-white/90 backdrop-blur-lg p-6 rounded-xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition duration-300"
+            className="bg-black/90 backdrop-blur-lg p-6 rounded-xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition duration-300"
           >
-            <h3 className="text-xl font-semibold text-gray-800 mb-2">{project.title}</h3>
-            <p className="text-gray-600">{project.desc}</p>
+            <h3 className="text-xl font-semibold text-gray-300 mb-2">{project.title}</h3>
+            <p className="text-gray-400">{project.desc}</p>
             <a
               href={project.link}
               target="_blank"
