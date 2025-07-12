@@ -1,9 +1,9 @@
-import anganwadiImg from '../assets/anganwadi.png';
-import marksportalImg from '../assets/marksportal.png';
+// import anganwadiImg from '../assets/anganwadi.png';
+// import marksportalImg from '../assets/marksportal.png';
 
 const Projects = () => {
   return (
-    <div className="min-h-screen px-4 py-12 bg-white flex flex-col items-center">
+    <div className="min-h-screen px-4 py-12 pt-30 bg-white flex flex-col items-center">
       <h2 className="text-3xl font-bold mb-6">Projects</h2>
 
       <div className="w-full max-w-4xl space-y-10 flex">
