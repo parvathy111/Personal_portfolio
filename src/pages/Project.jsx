@@ -1,80 +1,55 @@
-// import anganwadiImg from '../assets/anganwadi.png';
-// import marksportalImg from '../assets/marksportal.png';
+import React from 'react';
 
 const Projects = () => {
+  const projectData = [
+    {
+      title: 'Anganwadi Automation System',
+      desc: 'MERN stack-based web application to manage Anganwadi centers with daily tracking, vaccine management, messaging, and user roles (Admin, Supervisor, Worker, Beneficiary).',
+      link: 'https://github.com/yourusername/anganwadi-automation',
+    },
+    {
+      title: 'Student Marks Portal',
+      desc: 'A Django project to manage and display student marks, semester-wise reports, and admin dashboard functionality.',
+      link: 'https://github.com/yourusername/student-marks-portal',
+    },
+    {
+      title: 'Personal Portfolio',
+      desc: 'A responsive personal portfolio website built using React and Tailwind CSS. It showcases my skills, projects, and background with a clean and modern UI design.',
+      link: 'https://github.com/yourusername/personal-portfolio',
+    },
+  ];
+
   return (
-    <div className="min-h-screen px-4 py-12 pt-30 bg-white flex flex-col items-center">
-      <h2 className="text-3xl font-bold mb-6">Projects</h2>
+    <div className="relative min-h-screen bg-gradient-to-b from-gray-100 via-white to-gray-200 px-4 py-20 flex flex-col items-center overflow-hidden">
+      
+      {/* Floating abstract circles in background */}
+      <div className="absolute top-0 left-0 w-full h-full z-0 overflow-hidden pointer-events-none">
+        <div className="absolute w-72 h-72 bg-purple-200 rounded-full blur-3xl opacity-30 top-20 left-10 animate-pulse"></div>
+        <div className="absolute w-72 h-72 bg-blue-200 rounded-full blur-3xl opacity-30 bottom-10 right-10 animate-ping"></div>
+      </div>
 
-      <div className="w-full max-w-4xl space-y-10 flex">
-        {/* Project 1 */}
-        <div className="p-4 border rounded shadow-sm md:flex gap-6 m-2">
-          {/* <img
-            src={anganwadiImg}
-            alt="Anganwadi Automation"
-            className="w-full md:w-1/3 rounded"
-          /> */}
-          <div>
-            <h3 className="text-xl font-semibold mt-4 md:mt-0">Anganwadi Automation System</h3>
-            <p className="text-gray-700 mt-2">
-              MERN stack-based web application to manage Anganwadi centers with daily tracking,
-              vaccine management, messaging, and user roles (Admin, Supervisor, Worker, Beneficiary).
-            </p>
+      {/* Heading */}
+      <h2 className="text-4xl font-bold text-gray-800 mb-12 z-10">Projects</h2>
+
+      {/* Cards */}
+      <div className="grid gap-8 max-w-5xl w-full md:grid-cols-2 z-10">
+        {projectData.map((project, index) => (
+          <div
+            key={index}
+            className="bg-white/90 backdrop-blur-lg p-6 rounded-xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition duration-300"
+          >
+            <h3 className="text-xl font-semibold text-gray-800 mb-2">{project.title}</h3>
+            <p className="text-gray-600">{project.desc}</p>
             <a
-              href="https://github.com/yourusername/anganwadi-automation"
+              href={project.link}
               target="_blank"
-              className="text-blue-600 underline mt-2 inline-block"
+              rel="noreferrer"
+              className="inline-block mt-4 text-blue-600 font-medium hover:underline"
             >
-              View on GitHub
+              View on GitHub →
             </a>
           </div>
-        </div>
-
-        {/* Project 2 */}
-        <div className="p-4 border rounded shadow-sm md:flex gap-6 m-2">
-          {/* <img
-            src={marksportalImg}
-            alt="Student Marks Portal"
-            className="w-full md:w-1/3 rounded"
-          /> */}
-          <div>
-            <h3 className="text-xl font-semibold mt-4 md:mt-0">Student Marks Portal</h3>
-            <p className="text-gray-700 mt-2">
-              A Django project to manage and display student marks, semester-wise reports, and admin
-              dashboard functionality.
-            </p>
-            <a
-              href="https://github.com/yourusername/student-marks-portal"
-              target="_blank"
-              className="text-blue-600 underline mt-2 inline-block"
-            >
-              View on GitHub
-            </a>
-          </div>
-        </div>
-
-        {/* Project 3 */}
-        <div className="p-4 border rounded shadow-sm md:flex gap-6 m-2">
-          {/* <img
-            src={anganwadiImg}
-            alt="Anganwadi Automation"
-            className="w-full md:w-1/3 rounded"
-          /> */}
-          <div>
-            <h3 className="text-xl font-semibold mt-4 md:mt-0">Personal portfolio</h3>
-            <p className="text-gray-700 mt-2">
-              A responsive personal portfolio website built using React and Tailwind CSS. It showcases my skills, projects, and background with a clean and modern UI design.
-            </p>
-            <a
-              href="https://github.com/yourusername/anganwadi-automation"
-              target="_blank"
-              className="text-blue-600 underline mt-2 inline-block"
-            >
-              View on GitHub
-            </a>
-          </div>
-        </div>
-
+        ))}
       </div>
     </div>
   );
