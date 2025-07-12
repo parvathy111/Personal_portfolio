@@ -18,7 +18,7 @@ const Contact = () => {
       {/* Contact Card */}
       <div
         data-aos="fade-up"
-        className="relative z-10 max-w-xl mx-auto bg-gray/90 backdrop-blur-md border border-gray-200 p-10 rounded-2xl shadow-xl"
+        className="relative z-10 max-w-xl mx-auto bg-gray/90 backdrop-blur-md p-10 rounded-2xl shadow-xl"
       >
         <h2 className="text-4xl font-bold text-center text-white mb-8">Contact Me</h2>
 

@@ -29,14 +29,14 @@ const Projects = () => {
       </div>
 
       {/* Heading */}
-      <h2 className="text-4xl font-bold text-white mb-12 z-10">Projects</h2>
+      <h2 className="text-4xl font-bold text-white mb-12 z-10 mt-10">Projects</h2>
 
       {/* Cards */}
       <div className="grid gap-8 max-w-5xl w-full md:grid-cols-2 z-10">
         {projectData.map((project, index) => (
           <div
             key={index}
-            className="bg-black/90 backdrop-blur-lg p-6 rounded-xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition duration-300"
+            className="bg-gray backdrop-blur-lg p-6 rounded-xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition duration-300"
           >
             <h3 className="text-xl font-semibold text-gray-300 mb-2">{project.title}</h3>
             <p className="text-gray-400">{project.desc}</p>
