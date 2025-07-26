@@ -28,12 +28,12 @@ const Contact = () => {
           <p className="text-blue-700">
             🔗 LinkedIn:{" "}
             <a
-              href="https://linkedin.com/in/yourprofile"
+              href="https://www.linkedin.com/in/parvathykv"
               target="_blank"
               rel="noreferrer"
               className="text-blue-600 underline hover:text-blue-800 transition"
             >
-              https://www.linkedin.com/in/parvathykv
+              Parvathy K V
             </a>
           </p>
         </div>
