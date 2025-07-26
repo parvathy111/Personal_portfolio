@@ -23,8 +23,8 @@ const Contact = () => {
         <h2 className="text-4xl font-bold text-center text-white mb-8">Contact Me</h2>
 
         <div className="space-y-5 text-center text-lg">
-          <p className="text-blue-700">📧 Email: parvathy@example.com</p>
-          <p className="text-blue-700">📱 Phone: +91-XXXXXXXXXX</p>
+          <p className="text-blue-700">📧 Email: parvathykv.871@gmail.com</p>
+          <p className="text-blue-700">📱 Phone: +91-9846801513</p>
           <p className="text-blue-700">
             🔗 LinkedIn:{" "}
             <a
@@ -33,7 +33,7 @@ const Contact = () => {
               rel="noreferrer"
               className="text-blue-600 underline hover:text-blue-800 transition"
             >
-              linkedin.com/in/yourprofile
+              https://www.linkedin.com/in/parvathykv
             </a>
           </p>
         </div>
